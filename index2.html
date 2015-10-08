@@ -2,14 +2,14 @@
 <html>
 <body>
 
-<p>Click the button to open a new window with some specifications.</p>
-
-<button onclick="myFunction()">Try it</button>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 
 <script>
-function myFunction() {
-    window.open("http://www.w3schools.com", "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=500, left=500, width=400, height=400");
-}
+ $('element_to_pop_up').bPopup({
+            contentContainer:'.content',
+            loadUrl: 'http://www.w3schools.com' //Uses jQuery.load()
+        })
+
 </script>
 
 </body>
